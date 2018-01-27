@@ -1,0 +1,54 @@
+
+
+@media screen and (min-width: 900px) {
+
+    
+}
+
+/* content is sent to the left*/
+
+
+.mytextedit{
+    color:white;
+    text-decoration: overline;
+    text-decoration-color: #ab1717;
+    
+    
+}
+.mytextedit:hover{
+    
+    color:#888;
+    text-decoration: overline;
+    text-decoration-color: green;
+}
+
+
+
+
+.sidepage
+{
+    
+    background-color: none;
+    min-height: 900px;
+    border-top-color:  none;
+   
+    
+    
+    
+    
+    
+    
+}
+.mainpage
+{
+    background-color: grey;
+    color:white;
+    border-top-color:red;
+    padding:9px;
+   
+    
+    
+}
+
+
+
