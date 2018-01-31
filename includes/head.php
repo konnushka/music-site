@@ -19,7 +19,7 @@
   <script src="/components/bootstrap/dist/js/bootstrap.js"></script>
   <script src="/components/scripts/jquery.min.js"></script>
   <script src="/components/bootstrap/js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="/js/script.js"></script>
   <title><?php echo $page_title; ?></title>
     
 </head>

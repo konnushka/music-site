@@ -26,9 +26,9 @@ if (isset($_GET["search"]))
 {
     $searchwords ="%" . $_GET["search"] . "%";
     //ask the database
-    $searchquery = "SELECT artistname,songtitle From song WHERE songtitle LIKE ? OR artistname LIKE ?";
+    $searchquery = "SELECT artistname From artist WHERE artistname LIKE ?";
     $stmt = $conn -> prepare($searchquery);
-    $stmt -> bind_param("ss",$searchwords,$searchwords);
+    $stmt -> bind_param("s",$searchwords);
     $stmt -> execute();
     $result = $stmt ->get_result();
     
@@ -36,7 +36,7 @@ if (isset($_GET["search"]))
 else{
      $searchwords ="%" . $_GET["search"] . "%";
     //ask the database
-    $searchquery = "SELECT artistname,songtitle From song";
+    $searchquery = "SELECT artistname From artist";
     $stmt = $conn -> prepare($searchquery);
     //$stmt -> bind_param("s",$searchwords);
     $stmt -> execute();
@@ -68,8 +68,8 @@ else{
                      <div class="col-xs-2">
                             <!--<label for="searchoption"></label>-->
                             <select class="form-control" id="selectoption">
-                                <option >Songs</option>
                                 <option >Artist</option>
+                                <option >Songs</option>
                                 <option >Genre</option>
                             </select>
                         </div>
@@ -92,17 +92,17 @@ else{
             </div>
             
             <div class="row">
-                <div class="col-md-3 col-xs-12 col-sm-4">
+                <div class="col-sm-4">
+                   <p><a href="artist.php">Artist</a></p>
+                </div>
+                <div class="col-sm-5">
                     <p><a href="index.php">Songs</a></p>
                 </div>
-                <div class="col-sm-4">
-                    <p><a href="artist.php">Artist</a></p>
                 </div>
-                
-                <div class="col-sm-4">
+                <div class="col-sm-5">
                     <p><a href="genre.php">Genre</a></p>
                 </div>
-            </div>
+                </div>
             
             <div class="row">
                 
@@ -114,8 +114,8 @@ else{
                   {
                       //lets loop the data out
                       
-                       // $song_title = "";
-                       // $artist_title = "";
+                        $song_title = "";
+                        $artist_title = "";
                         
                         //echo "<div class=\"row col-sm-6 mainpage\"> ";
                         
@@ -124,12 +124,12 @@ else{
                             $song_title = $row["songtitle"];
                             $artist_name = $row["artistname"];
                             echo "
-                            <div class=\"col-md-3 col-sm-6 col-xs-6 mainpage\">
-                                 <div class=\"borderup alive\">
-                                    <small >$artist_name</small>
+                            <div class=\"row col-sm-3 mainpage\">
+                                <div class=\"borderup\">
+                                    
                                 </div>
                                 <div class=\" mytextedit2\">
-                                    $song_title
+                                    $artist_name
                                 </div>
                             </div>";
                         }

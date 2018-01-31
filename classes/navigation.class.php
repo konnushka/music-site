@@ -19,11 +19,11 @@ class Navigation{
         //echo $this -> current_page;
        
     }
-
+    
     public function showonnavbar()
     {
         //create a nav array
-        $navitems = array();
+        $nav_array = array();
         
         //lets check the session if user is logged in
         if($this -> logged_in == false)
@@ -43,18 +43,19 @@ class Navigation{
             
         }
         //now lets add the items to nnav bar
-        array_push($navitems,"<ul class=\"nav navbar-nav navbar-right\">");
+        $ulhead="<ul class=\"nav navbar-nav navbar-right\">";
+        array_push($nav_array,$ulhead);
         //lets do a loop to print out all lists
         foreach($navitems as $name =>$link)
         {
            
             //store scripts in variables
             $link_name = ucfirst( $name );
-            $element = "<li class=\"mytextedit\"><a class=\"mytextedit\"href=\"/$link\">$link_name</a></li>";
-            array_push($navitems,$element);
+            $element = "<li><a class=\"mytextedit\"href=\"/$link\">$link_name</a></li>";
+            array_push($nav_array,$element);
         }
         array_push($navitems, "</ul>");
-       return implode($navitems,"");
+           return implode($nav_array," ");
     }
      
 }

@@ -53,17 +53,19 @@ else if ($_SERVER["REQUEST_METHOD"] == "POST"){
                         //password_ver is bulit in
                         // $password is from the user and 
                         //$hash is the one stored in bd
-                        $message[result]= "Kroetta say yes you are logged in";
+                        $message[result]= "Kroetta say yes you are logged in <script type=\"text/javascript\">delay();</script>";
                         
                         $_SESSION["username"]=$username;
                         $_SESSION["userid"]=$userid;
-                        
-                        header("Location: https://music-site-konnushka.c9users.io/index.php");
+                        $_SESSION["email"]=$email;
+                        $_SESSION["password"]=$password;
+                       
+                        //header("Location: https://music-site-konnushka.c9users.io/index.php");
                         } 
                         
                         //if not found 
                         else {
-                          $message[result]="Kroetta say the username or pword is wrong";
+                          $message[result]="Kroetta say the username or password is wrong";
                         }
                 }
                 else

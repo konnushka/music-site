@@ -4,9 +4,9 @@
     <div class="navbar-header">
        <a class="navbar-brand mytextedit active" href="index.php">Kroetta</a>
     </div>
-    <ul class="nav navbar-nav">
+    <!--<ul class="nav navbar-nav">-->
       
-       <li>
+       <!--<li>-->
           <?php
           if(isset($_SESSION["username"]))
             {
@@ -20,11 +20,11 @@
            // output breaking
            //echo "<h6>$text.$username</h6>";
           ?>
-          </li>
+          <!--</li>-->
       
      
       
-    </ul>
+    <!--</ul>-->
     
      
     
