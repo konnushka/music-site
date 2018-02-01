@@ -74,69 +74,65 @@ else {
         <div class="container-fluid">
             
             <div class="row space">
-                <div class="col-sm-offset-3 "><?php echo "Welcome to Your Account Page $username";?></div>
+                
+                <div class="col-md-12 col-md-offset-3"><?php echo "Welcome to Your Account Page $username";?></div>
             </div>
             <div class="row">
-                
-                <form class="form-horizontal" method="post" action="account.php">
+                <div class="col-md-offset-3 col-md-6">
+                <h3>Account Settings</h3>
+                    <hr/>
+                   
                     
-                    <fieldset>
-                      <legend class="col-sm-offset-3">Account Settings</legend>
-                            <div class="form-group">
-                                
-                                <label class="col-sm-offset-2 control-label col-sm-2"  for="username">Username</label>
-                                
-                                    <div class="col-sm-4">
-                                        <input type="username" class="form-control" id="email" name="username" placeholder="<?php echo $username;?>">
-                                        
-                                    </div>
+                    
+                          <form class="form-horizontal" method="post" action="account.php">
+                                <div class="form-group">
                                     
-                                        
-                            </div>
-                            
-                            <div class="form-group">
-                                
-                                <label class="col-sm-offset-2 control-label col-sm-2" for="email">Email</label>
-                                
-                                    <div class="col-sm-4">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="<?php echo $email;?>">
-                                        
-                                    </div>
+                                    <label class="col-sm-offset-2 control-label col-sm-2"  for="username">Username</label>
                                     
-                                        
-                            </div>
-                            
-                             <div class="form-group">
-                                
-                                <label class="col-sm-offset-2 control-label col-sm-2" for="password">Password</label>
-                                
-                                    <div class="col-sm-4">
-                                        <input type="password" class="form-control" id="email" name="password" placeholder="New Password">
-                                        
-                                    </div>
-                                    
-                                        
-                            </div>
-                          
-                                    <div class="col-sm-offset-5 col-sm-2 ">
-                                            <button type="submit" name="update" class"btn btn-success"> Update</button>
+                                        <div class="col-sm-4">
+                                            <input type="username" class="form-control" id="email" name="username" placeholder="<?php echo $username;?>">
+                                            
                                         </div>
-                                     <span class="help-block"><?php echo $message["update"];?></span>
-                        </fieldset>
-                </form>
+                                </div>
+                                
+                                <div class="form-group">
+                                    
+                                    <label class="col-sm-offset-2 control-label col-sm-2" for="email">Email</label>
+                                    
+                                        <div class="col-sm-4">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="<?php echo $email;?>">
+                                            
+                                        </div>             
+                                </div>
+                                
+                                 <div class="form-group">
+                                    
+                                    <label class="col-sm-offset-2 control-label col-sm-2" for="password">Password</label>
+                                    
+                                        <div class="col-sm-4">
+                                            <input type="password" class="form-control" id="email" name="password" placeholder="New Password">
+                                            
+                                        </div>
+                                </div>
+                              
+                                        <div class="col-sm-offset-5 col-sm-2 ">
+                                                <button type="submit" name="update" class"btn btn-success"> Update</button>
+                                           </div>
+                                         <span class="help-block"><?php echo $message["update"];?></span>
+                                     
+                        
+                        </form>
+                  </div>
                 
-               
               </div> 
               
               <div class="row">
-                  
+                  <div class="col-md-offset-3 col-md-6">
+                  <h3>Add New Music</h3>
+                    <hr/>
                    <form class="form-horizontal" method="post" action="account.php">
-                    
-                    <fieldset>
-                      <legend class="col-sm-offset-3">Add New Music</legend>
-                            <div class="form-group">
-                                
-                                <label class="col-sm-offset-2 control-label col-sm-2"  for="username">Song Name</label>
+                         <div class="form-group">
+                             <label class="col-sm-offset-2 control-label col-sm-2"  for="username">Song Name</label>
                                 
                                     <div class="col-sm-4">
                                         <input type="text" class="form-control" id="song_name" name="song_name" placeholder="<?php echo " $username Whats it called";?>">
@@ -151,22 +147,18 @@ else {
                                 <label class="col-sm-offset-2 control-label col-sm-2" for="email">Artist</label>
                                 
                                     <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="artist_name" name="artist_name" placeholder="Whats the artist name">
-                                        
+                                    <input type="text" class="form-control" id="artist_name" name="artist_name" placeholder="Whats the artist name">
                                     </div>
-                                    
-                                        
-                            </div>
+                                
                             
                             
                                     <div class="col-sm-offset-5 col-sm-2 ">
                                             <button type="submit" name="update" class"btn btn-success"> Upload Music</button>
                                         </div>
                                      <span class="help-block"><?php echo $message["updatemusic"];?></span>
-                        </fieldset>
-                </form>
-                
-                  
+                       
+                    </form>
+                  </div>
                   
               </div>
         </div>
