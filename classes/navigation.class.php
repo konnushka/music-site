@@ -39,6 +39,7 @@ class Navigation{
             //lets set the nav bar items
             $navitems = array (
                 "<span class=\"glyphicon glyphicon-log-out \"></span> SignOut" => "signout.php",
+                "<span class=\"glyphicon glyphicon-log-out \"></span> Add Music" => "uploadmusic.php",
                 "<span class=\"glyphicon glyphicon-user \"></span> Account" => "account.php");
             
         }

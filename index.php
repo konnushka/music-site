@@ -56,10 +56,7 @@ else{
         
         <div class="container">
             
-            <div class="row">
-                
-                <p><h4><?php echo "Hello $username";?></h4></p>
-                    
+            
          
             <div class="row">
                 
@@ -67,11 +64,7 @@ else{
                     
                      <div class="col-xs-2">
                             <!--<label for="searchoption"></label>-->
-                            <select class="form-control" id="selectoption">
-                                <option >Songs</option>
-                                <option >Artist</option>
-                                <option >Genre</option>
-                            </select>
+                            <p><h4><?php echo "Hello $username";?></h4></p>
                         </div>
                     
                     <div class="form-group col-xs-6">
@@ -92,21 +85,20 @@ else{
             </div>
             
             <div class="row">
-                <div class="col-md-3 col-xs-12 col-sm-4">
+                    <div class="col-md-2 col-xs-12 col-sm-4">
+                        
                     <p><a href="index.php">Songs</a></p>
-                </div>
-                <div class="col-sm-4">
+                
                     <p><a href="artist.php">Artist</a></p>
-                </div>
                 
-                <div class="col-sm-4">
                     <p><a href="genre.php">Genre</a></p>
-                </div>
-            </div>
-            
-            <div class="row">
+                    
+                    <p><a href="playlist.php">Playlist</a></p>
+                    
+               
+                    </div>
                 
-             <div class="col-sm-12 sidepage">
+                 <div class="col-sm-8 col-md-10 col-xs-12 sidepage">
                   
                   <?php
                   //lets print it out

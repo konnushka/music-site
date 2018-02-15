@@ -1,3 +1,5 @@
+
+/*song animation */
 @keyframes change {
     from {background-color: gray;}
     to {background-color: white;}
@@ -8,6 +10,15 @@
     to {background-color: white;}
 }
 
+/*layout of the left and right pannel*/
+.leftcontrol{
+    
+   padding:10px;
+   margin-
+   
+    
+    
+}
 
 @media screen and (min-width: 900px) {
 

@@ -126,41 +126,7 @@ else {
                 
               </div> 
               
-              <div class="row">
-                  <div class="col-md-offset-3 col-md-6">
-                  <h3>Add New Music</h3>
-                    <hr/>
-                   <form class="form-horizontal" method="post" action="account.php">
-                         <div class="form-group">
-                             <label class="col-sm-offset-2 control-label col-sm-2"  for="username">Song Name</label>
-                                
-                                    <div class="col-sm-4">
-                                        <input type="text" class="form-control" id="song_name" name="song_name" placeholder="<?php echo " $username Whats it called";?>">
-                                        
-                                    </div>
-                                    
-                                        
-                            </div>
-                            
-                            <div class="form-group">
-                                
-                                <label class="col-sm-offset-2 control-label col-sm-2" for="email">Artist</label>
-                                
-                                    <div class="col-sm-4">
-                                    <input type="text" class="form-control" id="artist_name" name="artist_name" placeholder="Whats the artist name">
-                                    </div>
-                                
-                            
-                            
-                                    <div class="col-sm-offset-5 col-sm-2 ">
-                                            <button type="submit" name="update" class"btn btn-success"> Upload Music</button>
-                                        </div>
-                                     <span class="help-block"><?php echo $message["updatemusic"];?></span>
-                       
-                    </form>
-                  </div>
-                  
-              </div>
+              
         </div>
         
     </body>

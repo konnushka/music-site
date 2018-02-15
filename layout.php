@@ -5,7 +5,7 @@
         <div class="row">
 
             <!-- side nav-->
-            <div class="col">
+            <div class="col leftcontrol">
                 
                 Left Side
             </div>

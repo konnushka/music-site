@@ -1,6 +1,8 @@
 <?php include("classes/navigation.class.php");?>
-<nav class="navbar navbar-inverse">
+
+  <nav class="navbar navbar-inverse">
   <div class="container-fluid">
+    
     <div class="navbar-header">
        <a class="navbar-brand mytextedit active" href="index.php">Kroetta</a>
     </div>
@@ -34,5 +36,7 @@
         ?>
    
   </div>
-</nav>
+  </nav>
+
+    
 
